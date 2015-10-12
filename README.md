@@ -8,3 +8,5 @@ Built in C, Python, Django, Swift, JavaScript.
 
 Team Members:
   Phillip Kuznetsov; Arda Sahiner; Kunal Gosar; Jaemin Kim
+
+http://devpost.com/software/musicgenerator
