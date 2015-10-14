@@ -7,6 +7,8 @@ Built in C, Python, Django, Swift, JavaScript.
 
 Team Members: Kunal Gosar; Phillip Kuznetsov; Arda Sahiner; Jaemin Kim.
 
+http://devpost.com/software/musicgenerator
+
 _The details:_
 
 Based on Dr. John R. Francis' work in algorithmic computer music, we created C files that would build midi files of randomized songs in the genres of jazz, classical music, and video game music.
@@ -17,4 +19,4 @@ We created an iOS app that registers the taps of the user, calculates the input 
 
 Our web app allows a user to choose a genre and play midi files generated from that genre at the tempo sent to the server by the iOS app.
 
-Note: Be sure to install Python Midi for reading and writing midi files from python
+Note: Be sure to install Python Midi for reading and writing midi files from python.
