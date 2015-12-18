@@ -38,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'web_app',
+    'scalable_music_generator',
+    'midi',
 )
 
 MIDDLEWARE_CLASSES = (
