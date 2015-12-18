@@ -27,7 +27,7 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
     <script type="text/javascript" charset="utf-8">
-      var midi_file = "{% static 'midi/mozart_midi.mid' %}";
+      var midiDir = "{% static 'midi/' %}";
     </script>
     <!-- Plugin JavaScript -->
     <script src="{% static 'js/jquery.easing.min.js' %}"></script>
@@ -89,7 +89,7 @@
 <body id="page-top" onload="load_midi()">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- Brand and toggle get grouped in mobile view-->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -136,7 +136,7 @@
                 <div id="loaded_div" style="display: none;">
                     <h3>Loaded!</h3>
                 </div> -->
-                <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onClick="MIDIjs.play(midi_file);">Play Midi</button>
+                <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onClick="play_song();">Play Midi</button>
             </div>
                 <div class="container-fluid" style="padding-top:10px">
                 <!-- <div class="dropdown">
@@ -158,18 +158,18 @@
                         <option value="three">Video Game Music</option>
                     </select> -->
                 <!-- </div> -->
-                <div class="dropdown btn">
-                    <div id="dropDownId" class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#">
-                        Genre
-                        <b class="caret"></b>
-                    </div>
-                    <ul id="dropDownUL"  class="dropdown-menu pull-left" role="menu" aria-labelledby="dLabel">
-                    <li><a tabindex="-1" href="#" align="left">Jazz</a></li>
-                    <li><a tabindex="-1" href="#" align="left">Classical</a></li>
-                    <li><a tabindex="-1" href="#" align="left">Video Game Music</a></li>
-                    </ul>
-
-
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button"
+                  id="genreMenu" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="true">
+                    Genre
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li onclick="play_song('jazz')"><a>Jazz</a></li>
+                    <li onclick="play_song('classical')"><a>Classical</a></li>
+                    <li onclick="play_song('videogame')"><a>Video Game Music</a></li>
+                  </ul>
                 </div>
                 <!-- End uneeditables -->
             </div>

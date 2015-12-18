@@ -23,17 +23,25 @@ function stop_loading_handler(){
         loaded_div.hide();
     },5000);
 }
-
-$("#play_midi").click(function() {
-    MIDI.Player.start();
-});
+function get_midi(genre){
+    var files = {
+        "classical":midiDir+"mozart.mid",
+        "videogame":midiDir+"videogame.mid",
+        "jazz":midiDir+"jazz.mid"
+    };
+    return files[genre];
+}
+function play_song(genre){
+    var midi_file = get_midi(genre);
+    MIDIjs.play(midi_file);
+}
 function new_drop_down()
 {
     console.log('changed');
 }
-$(document).on('click', '.dropdown-menu li a', function () {
-    var new_genre = $(this).text()
-    $.getJSON('/api/newgenre/',{genre: new_genre} function(data, jqXHR){
-    });
-    console.log("Selected Option:"+$(this).text());
-});
+// $(document).on('click', '.dropdown-menu li a', function () {
+//     var new_genre = $(this).text();
+//     $.getJSON('/api/newgenre/',{genre: new_genre}, function(data, jqXHR){
+//     });
+//     console.log("Selected Option:"+$(this).text());
+// });
