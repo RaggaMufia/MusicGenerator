@@ -136,40 +136,17 @@
                 <div id="loaded_div" style="display: none;">
                     <h3>Loaded!</h3>
                 </div> -->
-                <button id="play_midi" class="btn btn-primary btn-xl page-scroll btn-block" onClick="play_song();">Play Midi</button>
+                <button id="play_midi" class="btn btn-primary btn-xl page-scroll" onClick="play_song();">Play</button>
+                <button id="stop_midi" class="btn btn-primary btn-xl page-scroll " onClick="stop_song();">Stop</button>
+                <button id="new_midi"  class="btn btn-primary btn-xl page-scroll " onClick="new_song();">New</button>
             </div>
                 <div class="container-fluid" style="padding-top:10px">
-                <!-- <div class="dropdown">
-
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Genre
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="transform:translate(38vw,0)" >
-                        <li><a href="#">Jazz</a></li>
-                        <li><a href="#">Classical</a></li>
-                        <li><a href="#">Video Game Music</a></li>
-                    </ul>
-
-                    <!-- </div> -->
-                    <!-- <select class="form-control dropdown-menu">
-                        <option value="one">Jazz</option>
-                        <option value="two">Classical</option>
-                        <option value="three">Video Game Music</option>
-                    </select> -->
-                <!-- </div> -->
-                <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button"
-                  id="genreMenu" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="true">
-                    Genre
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li onclick="play_song('jazz')"><a>Jazz</a></li>
-                    <li onclick="play_song('classical')"><a>Classical</a></li>
-                    <li onclick="play_song('videogame')"><a>Video Game Music</a></li>
-                  </ul>
+                <div class="form-group">
+                    <select class="form-control" id="genreMenu">
+                        <option value="classical">Classical</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="videogame">Videogame Music</option>
+                      </select>
                 </div>
                 <!-- End uneeditables -->
             </div>
