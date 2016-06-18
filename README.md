@@ -5,17 +5,19 @@ Input system through touch capacity of mobile devices, music output through web 
 
 Built in C, Python, Django, Swift, JavaScript.
 
+Team Members: Kunal Gosar; Phillip Kuznetsov; Arda Sahiner; Jaemin Kim.
 
-The details:
+http://devpost.com/software/musicgenerator
 
-Based on Dr. John R. Francis' work in algorithmic computer music, we created c files that would build midi files of randomized songs in the genres of jazz, classical music, and video game music.
+_The details:_
 
-Using python, we were able to create music generators for a given genre. These will maintain a set of midi files and when prompted return a random one at a given tempo. No two music files returned are the same.
+Based on Dr. John R. Francis' work in algorithmic computer music, we created C files that would build midi files of randomized songs in the genres of jazz, classical music, and video game music.
 
-We created an iOS app that registers the taps of the user, calculates the average taps per minute, and sends this data to a web server.
+Using Python, we were able to create music generators for a given genre. These will maintain a set of midi files and when prompted return a random one at a given tempo. No two music files ever returned or created are the same.
 
-Our web app allows a user to choose a genre and play midi files from that genre at the tempo sent to the server by the iOS app.
+We created an iOS app that registers the taps of the user, calculates the input tempo and beat, and sends this data to a web server.
 
-**Note:** Be sure to install [Python Midi](https://github.com/vishnubob/python-midi) for reading and writing midi files from python
+Our web app allows a user to choose a genre and play midi files generated from that genre at the tempo sent to the server by the iOS app.
 
-Team Members: Phillip Kuznetsov; Arda Sahiner; Kunal Gosar; Jaemin Kim.
+Note: Be sure to install Python Midi for reading and writing midi files from python.
+
